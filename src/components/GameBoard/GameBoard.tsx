@@ -31,14 +31,17 @@ export const GameBoard = (): JSX.Element=> {
     }
   }
 
-  const drawSnake = (ctx: CanvasRenderingContext2D) => {}
+  const drawSnake = (ctx: CanvasRenderingContext2D) => {
+    
+  }
 
   return (
-    <canvas
-      ref={canvasRef}
-      width={canvasWidth}
-      height={canvasHeight}
-      className={styles.board}
-    ></canvas>
+    <div className={styles.board}>
+      <canvas
+        ref={canvasRef}
+        width={canvasWidth}
+        height={canvasHeight}
+      ></canvas>
+    </div>
   )
 }
